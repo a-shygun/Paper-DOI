@@ -203,7 +203,7 @@ class PaperDoiImporterSettingTab extends PluginSettingTab {
 	display() {
 		const { containerEl } = this;
 		containerEl.empty();
-		containerEl.createEl("h2", { text: "Paper DOI Importer" });
+		containerEl.createEl("h2", { text: "Paper DOI" });
 		containerEl.createEl("p", { text: "Choose where imported notes and PDFs are saved, and which Markdown template supplies the note properties." });
 		new Setting(containerEl)
 			.setName("Literature note folder")
