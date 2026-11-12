@@ -1,0 +1,144 @@
+.paper-import-instructions,
+.paper-import-form,
+.paper-import-progress {
+	min-width: 0;
+}
+
+.paper-import-instructions {
+	margin: 0 0 1.25rem;
+	padding: 0.9rem 1rem;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	background: var(--background-secondary);
+}
+
+.paper-import-instructions p {
+	margin: 0 0 0.55rem;
+}
+
+.paper-import-instructions p:last-child {
+	margin-bottom: 0;
+}
+
+.paper-import-hint {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+}
+
+.paper-import-form .setting-item {
+	border-top: 0;
+}
+
+.paper-import-form .setting-item:first-child {
+	display: block;
+}
+
+.paper-import-form .setting-item:first-child .setting-item-control {
+	width: 100%;
+	margin-top: 0.45rem;
+}
+
+.paper-import-form .setting-item:first-child input {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.paper-import-progress {
+	margin-top: 1rem;
+}
+
+.paper-import-steps {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.paper-import-step {
+	position: relative;
+	margin: 0;
+	padding: 0.65rem 0.75rem 0.65rem 2.3rem;
+	border-left: 2px solid var(--background-modifier-border);
+}
+
+.paper-import-step:last-child {
+	border-left-color: transparent;
+}
+
+.paper-step-icon {
+	position: absolute;
+	left: -0.72rem;
+	top: 0.65rem;
+	display: grid;
+	width: 1.3rem;
+	height: 1.3rem;
+	place-items: center;
+	border-radius: 50%;
+	background: var(--background-primary);
+	color: var(--text-muted);
+	font-weight: 700;
+}
+
+.paper-step-label {
+	font-weight: 600;
+}
+
+.paper-step-detail {
+	margin-top: 0.2rem;
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	overflow-wrap: anywhere;
+}
+
+.paper-import-step.is-active .paper-step-icon {
+	color: var(--interactive-accent);
+	animation: paper-import-pulse 1.2s ease-in-out infinite;
+}
+
+.paper-import-step.is-done .paper-step-icon {
+	color: var(--color-green);
+}
+
+.paper-import-step.is-warning .paper-step-icon {
+	color: var(--color-orange);
+}
+
+.paper-import-step.is-error .paper-step-icon {
+	color: var(--color-red);
+}
+
+.paper-import-result {
+	margin: 0.9rem 0;
+	padding: 0.8rem 1rem;
+	box-sizing: border-box;
+	border-left: 3px solid var(--interactive-accent);
+	border-radius: var(--radius-s);
+	background: var(--background-secondary);
+	overflow-wrap: anywhere;
+}
+
+.paper-import-result strong {
+	display: block;
+	margin-bottom: 0.25rem;
+	overflow-wrap: anywhere;
+}
+
+.paper-import-result > div {
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+
+.paper-import-result.is-warning {
+	border-left-color: var(--color-orange);
+}
+
+.paper-import-result.is-error {
+	border-left-color: var(--color-red);
+}
+
+.paper-import-progress > button {
+	margin-top: 0.25rem;
+}
+
+@keyframes paper-import-pulse {
+	50% { opacity: 0.45; }
+}

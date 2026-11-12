@@ -1,0 +1,9 @@
+{
+  "id": "paper-doi-importer",
+	"name": "Paper DOI",
+	"version": "1.9.0",
+  "minAppVersion": "1.7.6",
+	"description": "Import paper metadata with guided progress, configurable note/PDF paths, and optional PDF download.",
+  "author": "Local vault plugin",
+  "isDesktopOnly": false
+}
